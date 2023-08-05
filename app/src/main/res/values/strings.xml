@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">MarvelComicsApp</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="text_btn_welcome">LET\'S START</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome!"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="error_session_expired">Your session expired. Please login again.</string>
+    <string name="error_no_network">It seems you are not connected to a network. Check the connectivity of your device and retry.</string>
+    <string name="error_credentials">Credentials not correct. Retry.</string>
+    <string name="error_camera">Camera access denied</string>
+    <string name="error_generic">Something went wrong. Please try again.</string>
+    <string name="error_generic_code">Something went wrong. Please try again.\nError: %s</string>
+    <string name="description">Info fumetti per te</string>
+    <string name="let_s_start">LET\'S START</string>
+
+    <!-- share Prefe -->
+    <string name="sp_key">spKey</string>
+    <string name="sp_login_key">loginSp</string>
+    <string name="sp_user_name_home">userNameHome</string>
+    <string name="sp_credential_login">credentialUser</string>
+    <string name="sp_user_email_home">userNameEmail</string>
+    <string name="sp_user_password_home">userNamePassword</string>
+    <string name="confirm_exit">Conferma l\'uscita</string>
+    <string name="sure_exit">Sei sicuro di voler uscire?</string>
+    <string name="no_btn">No</string>
+    <string name="yes_btn">Si</string>
+    <string name="hello_user">Ciao,</string>
+    <string name="logout">Logout</string>
+    <string name="marvel_universe">Marvel Universe</string>
+    <string name="signup">Registrati</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="accetta_le_condizioni">Accetta le condizioni</string>
+    <string name="login">LOGIN</string>
+    <string name="login_title">Accedi</string>
+    <string name="ricorda_le_credenziali">Ricorda le credenziali</string>
+    <string name="biometric_authentication">Biometric Authentication</string>
+    <string name="click_the_button_to_start_authentication">Click the button to start authentication</string>
+    <string name="authenticate">Authenticate</string>
+</resources>
