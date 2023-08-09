@@ -9,136 +9,137 @@
         android:layout_height="match_parent"
         android:background="@color/black"
         tools:context=".LoginFragment">
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="411dp"
-            android:layout_height="891dp"
-            android:background="@drawable/db_custom_layout_login_first_part"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-            <TextView
-                android:id="@+id/titleAccedi"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="300dp"
-                android:gravity="center_horizontal"
-                android:text="@string/login_title"
-                android:textColor="@color/white"
-                android:textSize="40sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <EditText
-                android:id="@+id/editEmail"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginStart="80dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="80dp"
-                android:autofillHints="emailAddress"
-                android:background="@drawable/db_custom_button_welcome"
-                android:backgroundTint="@color/white"
-                android:hint="@string/email"
-                android:inputType="textEmailAddress"
-                android:padding="5dp"
-                android:textColor="@color/black"
-                android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/titleAccedi" />
-
-            <EditText
-                android:id="@+id/editPassword"
-                android:layout_width="match_parent"
-                android:layout_height="48dp"
-                android:layout_marginStart="80dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginEnd="80dp"
-                android:autofillHints="password"
-                android:background="@drawable/db_custom_button_welcome"
-                android:backgroundTint="@color/white"
-                android:hint="@string/enter_your_password"
-                android:inputType="textPassword"
-                android:padding="5dp"
-                android:paddingStart="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="#757575"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/editEmail"
-                app:passwordToggleEnabled="true"
-                tools:ignore="RtlSymmetry" />
-
-            <CheckBox
-                android:id="@+id/checkbox_ricorda"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginTop="20dp"
-                android:text="@string/ricorda_le_credenziali"
-                android:textColor="@color/white"
-                android:textStyle="italic"
-                app:layout_constraintStart_toStartOf="@id/editPassword"
-                app:layout_constraintTop_toBottomOf="@id/editPassword" />
-
-
-            <Button
-                android:id="@+id/butLogin"
-                android:layout_width="280dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="60dp"
-                android:background="@drawable/db_custom_button_welcome"
-                android:backgroundTint="@color/red"
-                android:enabled="false"
-                android:padding="5dp"
-                android:text="@string/login"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/checkbox_ricorda" />
-
-            <Button
-                android:id="@+id/butBiometric"
-                android:layout_width="280dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="30dp"
-                android:background="@drawable/db_custom_button_welcome"
-                android:backgroundTint="@color/red"
-                android:enabled="true"
-                android:padding="5dp"
-                android:text="@string/biometric_authentication"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/butLogin"
-                tools:ignore="TextSizeCheck" />
-
-            <Button
-                android:id="@+id/butSig"
-                android:layout_width="280dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="73dp"
-                android:background="@drawable/db_custom_button_welcome"
-                android:padding="5dp"
-                android:text="@string/signup"
-                android:textColor="@color/white"
-                android:textSize="17sp"
-                android:textStyle="bold"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="411dp"
+                android:layout_height="891dp"
+                android:background="@drawable/db_custom_layout_login_first_part"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
+                <TextView
+                    android:id="@+id/titleAccedi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="300dp"
+                    android:gravity="center_horizontal"
+                    android:text="@string/login_title"
+                    android:textColor="@color/white"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/editEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/db_custom_button_welcome"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/titleAccedi" />
+
+                <EditText
+                    android:id="@+id/editPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_marginStart="80dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="80dp"
+                    android:autofillHints="password"
+                    android:background="@drawable/db_custom_button_welcome"
+                    android:backgroundTint="@color/white"
+                    android:hint="@string/enter_your_password"
+                    android:inputType="textPassword"
+                    android:padding="5dp"
+                    android:paddingStart="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/editEmail"
+                    app:passwordToggleEnabled="true"
+                    tools:ignore="RtlSymmetry" />
+
+                <CheckBox
+                    android:id="@+id/checkboxRicorda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/ricorda_le_credenziali"
+                    android:textColor="@color/white"
+                    android:textStyle="italic"
+                    app:layout_constraintStart_toStartOf="@id/editPassword"
+                    app:layout_constraintTop_toBottomOf="@id/editPassword" />
+
+
+                <Button
+                    android:id="@+id/butLogin"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="60dp"
+                    android:background="@drawable/db_custom_button_welcome"
+                    android:backgroundTint="@color/red"
+                    android:enabled="false"
+                    android:padding="5dp"
+                    android:text="@string/login"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/checkboxRicorda" />
+
+                <Button
+                    android:id="@+id/butBiometric"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/db_custom_button_welcome"
+                    android:backgroundTint="@color/red"
+                    android:enabled="true"
+                    android:padding="5dp"
+                    android:text="@string/biometric_authentication"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/butLogin"
+                    tools:ignore="TextSizeCheck" />
+
+                <Button
+                    android:id="@+id/butSig"
+                    android:layout_width="280dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="73dp"
+                    android:background="@drawable/db_custom_button_welcome"
+                    android:padding="5dp"
+                    android:text="@string/signup"
+                    android:textColor="@color/white"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintBottomSheet"
@@ -146,9 +147,10 @@
             android:layout_height="300dp"
             android:background="@drawable/db_bottom_sheet"
             android:clickable="true"
+            android:focusable="true"
             android:visibility="invisible"
             app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
-            android:focusable="true">
+            tools:ignore="TextSizeCheck">
 
             <TextView
                 android:id="@+id/authStatus"
@@ -170,11 +172,12 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_marginTop="40dp"
+                android:importantForAccessibility="no"
                 android:src="@drawable/baseline_fingerprint_24"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/authStatus"
-                android:importantForAccessibility="no" />
+                tools:ignore="ImageContrastCheck" />
 
             <Button
                 android:id="@+id/authBtn"
@@ -187,5 +190,5 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/imageView" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-   </androidx.coordinatorlayout.widget.CoordinatorLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

@@ -23,7 +23,7 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <TextView
-                android:id="@+id/exitDescrizione"
+                android:id="@+id/comicsTitle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@{nameItem.description}"
@@ -34,6 +34,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="SmallSp" />
+                tools:ignore="SmallSp"
+                tools:text="Lorem ipsum" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

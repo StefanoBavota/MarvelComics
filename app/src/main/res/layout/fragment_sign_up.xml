@@ -23,75 +23,77 @@
                 android:id="@+id/titleAccedi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="300dp"
                 android:gravity="center_horizontal"
                 android:text="@string/signup"
                 android:textColor="@color/white"
                 android:textSize="40sp"
                 android:textStyle="bold"
-                android:layout_marginTop="300dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
             <EditText
                 android:id="@+id/editName"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
+                android:layout_marginStart="100dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginEnd="100dp"
-                android:layout_marginStart="100dp"
-                android:padding="5dp"
-                android:hint="@string/name"
                 android:background="@drawable/db_custom_button_welcome"
                 android:backgroundTint="@color/white"
+                android:hint="@string/name"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:padding="5dp"
                 android:textColor="@color/black"
                 android:textColorHint="#757575"
-                android:inputType="text"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/titleAccedi"
-                android:importantForAutofill="no" />
+                app:layout_constraintTop_toBottomOf="@id/titleAccedi" />
+
             <EditText
                 android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginEnd="100dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="100dp"
-                android:padding="5dp"
-
-                android:hint="@string/email"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
                 android:background="@drawable/db_custom_button_welcome"
+
                 android:backgroundTint="@color/white"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
                 android:textColor="@color/black"
                 android:textColorHint="#757575"
-                android:inputType="textEmailAddress"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/editName"
-                android:importantForAutofill="no" />
+                app:layout_constraintTop_toBottomOf="@id/editName" />
 
             <EditText
                 android:id="@+id/editPassword"
                 android:layout_width="match_parent"
                 android:layout_height="48dp"
-                android:layout_marginEnd="100dp"
-                android:layout_marginTop="10dp"
                 android:layout_marginStart="100dp"
-               android:padding="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="100dp"
                 android:background="@drawable/db_custom_button_welcome"
                 android:backgroundTint="@color/white"
-                app:passwordToggleEnabled="true"
                 android:hint="@string/enter_your_password"
+                android:importantForAutofill="no"
                 android:inputType="textPassword"
+                android:padding="5dp"
                 android:textColor="@color/black"
                 android:textColorHint="#757575"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/editEmail"
-                android:importantForAutofill="no" />
+                app:passwordToggleEnabled="true" />
 
             <CheckBox
-                android:id="@+id/checkbox_ricorda"
+                android:id="@+id/checkboxAccetta"
                 android:layout_width="wrap_content"
                 android:layout_height="48dp"
                 android:layout_marginTop="20dp"
@@ -108,17 +110,16 @@
                 android:layout_width="280dp"
                 android:layout_height="50dp"
                 android:layout_marginTop="60dp"
-                android:padding="5dp"
                 android:background="@drawable/db_custom_button_welcome"
-                android:enabled="false"
-                android:text="@string/login"
                 android:backgroundTint="@color/black"
+                android:enabled="false"
+                android:padding="5dp"
+                android:text="@string/confirm"
                 android:textSize="17sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/checkbox_ricorda" />
-
+                app:layout_constraintTop_toBottomOf="@id/checkboxAccetta" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

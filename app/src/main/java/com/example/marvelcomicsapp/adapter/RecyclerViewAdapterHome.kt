@@ -21,7 +21,6 @@ class RecyclerViewAdapterHome() : DataBoundListAdapter<ViewModelCardHome>(
             return old.description == aNew.description
         }
     }
-
 ) {
     override fun createBinding(parent: ViewGroup, viewType: Int): ViewDataBinding {
         return DataBindingUtil.inflate(
@@ -34,9 +33,8 @@ class RecyclerViewAdapterHome() : DataBoundListAdapter<ViewModelCardHome>(
 
     override fun bind(binding: ViewDataBinding, item: ViewModelCardHome) {
         when (binding) {
-            is  ItemCardInfoBinding-> {
+            is ItemCardInfoBinding -> {
                 binding.nameItem = item
-
             }
         }
     }

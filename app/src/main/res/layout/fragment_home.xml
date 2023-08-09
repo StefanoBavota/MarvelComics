@@ -93,7 +93,8 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/carouselRecyclerview" />
+                app:layout_constraintTop_toBottomOf="@+id/carouselRecyclerview"
+                tools:listitem="@layout/item_card_info" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.coordinatorlayout.widget.CoordinatorLayout>

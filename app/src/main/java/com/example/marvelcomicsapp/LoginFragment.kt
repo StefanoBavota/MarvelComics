@@ -70,8 +70,8 @@ class LoginFragment : Fragment() {
                         }
                     }
                 }
-
-            })
+            }
+        )
 
         promptInfo = BiometricPrompt.PromptInfo.Builder()
             .setTitle("Biometric Authentication")
@@ -81,16 +81,19 @@ class LoginFragment : Fragment() {
         binding.authBtn.setOnClickListener {
             biometricPrompt.authenticate(promptInfo)
         }
+
         return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
         val bottomSheetBehaviorLogin = BottomSheetBehavior.from(binding.constraintBottomSheet)
         bottomSheetBehaviorLogin.apply {
             peekHeight = 100
             this.state = BottomSheetBehavior.STATE_COLLAPSED
         }
+
         binding.butBiometric.setOnClickListener {
             binding.constraintBottomSheet.visibility = View.VISIBLE
             bottomSheetBehaviorLogin.state = BottomSheetBehavior.STATE_EXPANDED

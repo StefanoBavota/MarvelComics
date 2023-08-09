@@ -38,6 +38,7 @@ class HomeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         var doubleBackToExitPressedOnce = false
+
         requireActivity().onBackPressedDispatcher.addCallback(
             viewLifecycleOwner,
             object : OnBackPressedCallback(true) {
@@ -49,7 +50,8 @@ class HomeFragment : Fragment() {
                     }
                     doubleBackToExitPressedOnce = !doubleBackToExitPressedOnce
                 }
-            })
+            }
+        )
 
         homeViewModel.getUser()
         adapterRe = RecyclerViewAdapterHome()
@@ -60,7 +62,7 @@ class HomeFragment : Fragment() {
         imageList.add(ImageModel(R.drawable.deadpool, "deadpool"))
         imageList.add(ImageModel(R.drawable.thor, "thor"))
         imageList.add(ImageModel(R.drawable.loki, "loki"))
-        imageList.add(ImageModel(R.drawable.spider_man, "spider_man"))
+        imageList.add(ImageModel(R.drawable.iron_man, "iron man"))
 
         adapterImage = RecyclerViewAdapterImage(object : DataBoundListAdapter.onItemClickListener {
             override fun onClick(name: String) {
